@@ -1,0 +1,15 @@
+FileLoad gr.spk.0.0
+FileLoad gr.spk.0.50
+FileLoad gr.spk.0.100
+
+EndTime 6000
+TimeBin 1000
+SamplingRate 0.03
+NumberOfNeurons 2114
+
+Output Gr 0:1023
+Output Go 1024:2047
+Output Pkj 2048:2079
+Output St 2080:2111
+Output Vn 2112:2112
+Output Io 2113:2113

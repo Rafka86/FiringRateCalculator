@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Rafka\.Rider2018.1\system\resharper-host\local\Transient\ReSharperHost\v12\SolutionCaches\_FiringRateCalculator.955989270.00" t="ExcludeRecursive" />
+    <e p="D:\My Documents\RiderProjects\FiringRateCalculator" t="IncludeFlat">
+      <e p="FiringRateCalculator" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="FiringRateCalculator.csproj" t="IncludeRecursive" />
+        <e p="frc.setting" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Release" t="Include">
+            <e p="netcoreapp2.1" t="Include">
+              <e p="FiringRateCalculator.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="output" t="Include">
+          <e p="Go.frate.gr.spk.0.0" t="Include" />
+          <e p="Go.frate.gr.spk.0.100" t="Include" />
+          <e p="Go.frate.gr.spk.0.50" t="Include" />
+          <e p="gr.frate.gr.spk.0.0" t="Include" />
+          <e p="gr.frate.gr.spk.0.100" t="Include" />
+          <e p="gr.frate.gr.spk.0.50" t="Include" />
+          <e p="Io.frate.gr.spk.0.0" t="Include" />
+          <e p="Io.frate.gr.spk.0.100" t="Include" />
+          <e p="Io.frate.gr.spk.0.50" t="Include" />
+          <e p="max.out" t="Include" />
+          <e p="Pkj.frate.gr.spk.0.0" t="Include" />
+          <e p="Pkj.frate.gr.spk.0.100" t="Include" />
+          <e p="Pkj.frate.gr.spk.0.50" t="Include" />
+          <e p="St.frate.gr.spk.0.0" t="Include" />
+          <e p="St.frate.gr.spk.0.100" t="Include" />
+          <e p="St.frate.gr.spk.0.50" t="Include" />
+          <e p="Vn.frate.gr.spk.0.0" t="Include" />
+          <e p="Vn.frate.gr.spk.0.100" t="Include" />
+          <e p="Vn.frate.gr.spk.0.50" t="Include" />
+        </e>
+        <e p="Program.cs" t="Include" />
+      </e>
+      <e p="FiringRateCalculator.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
