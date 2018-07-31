@@ -45,12 +45,17 @@ namespace FiringRateCalculator {
         if (args.Length == 0 || args.Length > 4)
           throw new ArgumentException(sb.ToString());
 
-        for (var i = 1; i < args.Length; i++) {
+        for (var i = 0; i < args.Length; i++) {
           switch (args[i]) {
             case "-h": case "--help": WriteLine(sb.ToString()); Environment.Exit(0); break;
             case "-s": givenSettingFile = true; settingFile = args[i + 1]; break;
             case "-y": skipOk = true; break;
           }
+        }
+        if (Path.GetExtension(args[0]).ToLower() != ".zip") {
+          WriteLine($"{args[0]}はzipファイルではありません．zipファイルを指定してください．");
+          WriteLine(sb.ToString());
+          Environment.Exit(0);
         }
       }
 
@@ -74,7 +79,7 @@ namespace FiringRateCalculator {
       }
 
       string[] ChooseFiles(ZipArchive archive) {
-        WriteLine($"\"{args[0]}\"には以下のファイルが含まれています．"); 
+        WriteLine($"\"{args[0]}\"には以下のファイルが含まれています．");
         var sb = new StringBuilder();
         var lineCount = 0;
         foreach (var file in archive.Entries) {
@@ -157,7 +162,7 @@ namespace FiringRateCalculator {
                                                        {"numberofneurons", false}
                                                      };
         if (configCommands.Count != 0) {
-          WriteLine($"設定を\"{args[1]}\"から読み込みます．");
+          WriteLine($"設定を\"{settingFile}\"から読み込みます．");
           foreach (var command in configCommands) {
             var comArgs = command.Split();
             switch (comArgs[0].ToLower()) {
@@ -261,7 +266,7 @@ namespace FiringRateCalculator {
 
         using (var maxFrateFile = new StreamWriter(@"output/max.out")) {
           if (outputCommands.Count != 0) {
-            WriteLine($"設定ファイル\"{args[1]}\"に従って出力を行います．");
+            WriteLine($"設定ファイル\"{settingFile}\"に従って出力を行います．");
             foreach (var command in outputCommands) {
               var comArgs = command.Split();
               switch (comArgs[0].ToLower()) {
